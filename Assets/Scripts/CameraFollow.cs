@@ -7,13 +7,9 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] public GameObject player;
     public float distance = 30f;
 
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
-        transform.position = new Vector3(Mathf.Abs(player.transform.position.x) - 0.63f, this.transform.position.y, this.transform.position.z);
+        transform.position = new Vector3(player.transform.position.x -3.5f, player.transform.position.y, transform.position.z);
     }
 }

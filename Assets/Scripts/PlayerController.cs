@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     int jumpHeight = 8;
     int jumpWidth = 2;
     public Rigidbody rb;
+    Camera cam;
 
     float degreeStep = 180f;
     float followSpeed = 2f;
@@ -22,6 +23,8 @@ public class PlayerController : MonoBehaviour
         ownRotation = transform.rotation;
 
         startRotation = this.transform.rotation;
+
+        cam = Camera.main;
     }
 
     void Update()
